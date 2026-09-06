@@ -14,7 +14,7 @@ const GAMES = [
       "The character runs automatically while he has to jump over incoming obstacles, with a seamlessly looping background, dedicated run/jump/death animations, and sound and particle effects tied to each action.",
     tags: ["Unity", "C#", "3D"],
     thumb: "assets/thumbnails/rebel.png",
-    buildPath: "games/rebel/index.html",
+    playUrl: "https://play.unity.com/en/games/287b5d83-31cb-4992-b869-e14fced54874/town-rebel",
     links: {
       github: "https://github.com/zeynepygc/TownRebel",
     },
@@ -27,7 +27,7 @@ const GAMES = [
       "A 3D walkthrough built for Unity's Junior Programmer pathway, where the player approaches three statues — Shiva Lingam, Radha-Krishna, and Ganesh — and interacts with each to receive its blessing. Built specifically to demonstrate all four pillars of object-oriented programming, from inheritance across the statue classes to abstraction in how each interaction is presented.",
     tags: ["Unity", "C#", "3D", "OOP"],
     thumb: "assets/thumbnails/temple.png",
-    buildPath: "games/temple/index.html",
+    playUrl: "https://play.unity.com/en/games/8cb8ac00-92f7-4e4a-9c7c-b24e6e043244/temple-tales-oop",
     links: {
       github: "https://github.com/zeynepygc/OOP-Theory",
     },
