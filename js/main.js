@@ -40,4 +40,44 @@ function renderGame(game, index) {
 
   row.innerHTML = `
     <div class="game-media">
-      <img
+      <img class="thumb" src="${game.thumb}" alt="Screenshot of ${game.title}" loading="lazy" />
+      ${mediaTriggerHTML(game)}
+    </div>
+    <div class="game-info">
+      <h3>${game.title}</h3>
+      <p class="game-tagline">${game.tagline}</p>
+      <p class="game-desc">${game.description}</p>
+      <ul class="tag-list">
+        ${game.tags.map((t) => `<li>${t}</li>`).join("")}
+      </ul>
+      <div class="game-links">${linkList(game.links)}</div>
+    </div>
+  `;
+
+  if (game.video) {
+    const media = row.querySelector(".game-media");
+    const button = row.querySelector(".play-button");
+    button.addEventListener("click", () => {
+      const video = document.createElement("video");
+      video.src = game.video;
+      video.controls = true;
+      video.autoplay = true;
+      video.playsInline = true;
+      media.innerHTML = "";
+      media.appendChild(video);
+    });
+  }
+
+  return row;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const list = document.getElementById("games");
+  if (!Array.isArray(GAMES) || GAMES.length === 0) {
+    list.innerHTML = `<p style="color: var(--text-dim); text-align: center;">
+      No games added yet — edit js/games-data.js to add your first one.
+    </p>`;
+    return;
+  }
+  GAMES.forEach((game, i) => list.appendChild(renderGame(game, i)));
+});
