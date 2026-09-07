@@ -33,6 +33,13 @@ const GAMES = [
     },
   },
 
+  {
+  title: "Meditation Timer",
+  thumb: "assets/thumbnails/timer.png",
+  playUrl: "https://zeyvaldez.itch.io/meditate",
+  // links: { github: "https://github.com/zeynepygc/your-meditation-repo" },
+  },
+
 
   // {
   //   title: "Second Game",
