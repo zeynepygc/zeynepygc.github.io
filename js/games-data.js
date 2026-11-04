@@ -40,6 +40,15 @@ const GAMES = [
   // links: { github: "https://github.com/zeynepygc/your-meditation-repo" },
   },
 
+  {
+    title: "Desi Drop",
+    thumb: "assets/thumbnails/cp.png",
+    playUrl: "https://play.unity.com/en/games/a90b6912-212b-4fa8-a77a-5d53905d8447/desi-drop-counting-prototype",
+    links: {
+      github: "https://github.com/zeynepygc/Counting-Prototype",
+    },
+  },  
+
 
   // {
   //   title: "Second Game",
